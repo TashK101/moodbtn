@@ -1,0 +1,35 @@
+.mood-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    transition: background 0.3s ease;
+    min-width: 100%;
+  }
+  
+  .mood-label {
+    font-size: 2rem;
+  }
+  
+  .mood-button {
+    font-size: 1.25rem;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  @keyframes rainbow {
+    0% { background-color: red; }
+    16% { background-color: orange; }
+    33% { background-color: yellow; }
+    50% { background-color: green; }
+    66% { background-color: blue; }
+    83% { background-color: indigo; }
+    100% { background-color: violet; }
+  }
+  
+  .rainbow-bg {
+    animation: rainbow 3s linear infinite;
+  }

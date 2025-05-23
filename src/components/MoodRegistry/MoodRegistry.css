@@ -1,0 +1,29 @@
+.mood-registry {
+    margin-top: 2rem;
+    width: 100%;
+    max-width: 400px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 8px;
+    padding: 1rem;
+    backdrop-filter: blur(4px);
+    overflow-y: auto;
+    max-height: 200px;
+  }
+  
+  .mood-registry h2 {
+    margin-top: 0;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  
+  .mood-registry ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+  }
+  
+  .mood-registry li {
+    padding: 0.25rem 0;
+    border-bottom: 1px solid #ccc;
+  }
+  
