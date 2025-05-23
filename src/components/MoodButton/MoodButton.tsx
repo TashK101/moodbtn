@@ -11,13 +11,18 @@ const moods = [
 
 const luckyMood = { label: '🌈 Lucky', color: 'rainbow' }
 
-function getDifferentMood(currentMood) {
+interface Mood {
+  label: string
+  color: string
+}
+
+function getDifferentMood(currentMood: Mood): Mood {
   // 5% chance to get lucky mood
   if (Math.random() < 0.05) {
     return luckyMood
   }
 
-  const filtered = moods.filter((m) => m.label !== currentMood.label)
+  const filtered: Mood[] = moods.filter((m) => m.label !== currentMood.label)
   return filtered[Math.floor(Math.random() * filtered.length)]
 }
 
